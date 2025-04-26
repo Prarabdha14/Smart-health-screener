@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_00d7ca51e32ea673376196253be7fb50 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_00d7ca51e32ea673376196253be7fb50" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_00d7ca51e32ea673376196253be7fb50 = L.map(
+                "map_00d7ca51e32ea673376196253be7fb50",
+                {
+                    center: [18.5, 73.7],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c637aff0b0c20ed58a996cf438c77661 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c637aff0b0c20ed58a996cf438c77661.addTo(map_00d7ca51e32ea673376196253be7fb50);
+        
+    
+            var marker_99acbbd7cfd9110ba6ffcb163ed4224f = L.marker(
+                [18.5, 73.7],
+                {
+}
+            ).addTo(map_00d7ca51e32ea673376196253be7fb50);
+        
+    
+            var icon_062fd378321f2de446d107794cb17129 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_99acbbd7cfd9110ba6ffcb163ed4224f.bindTooltip(
+                `<div>
+                     Your Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_99acbbd7cfd9110ba6ffcb163ed4224f.setIcon(icon_062fd378321f2de446d107794cb17129);
+            
+    
+            var marker_cfa41ffff8c812cbff52d3ef1bc9b70a = L.marker(
+                [18.5133532, 73.6774479],
+                {
+}
+            ).addTo(map_00d7ca51e32ea673376196253be7fb50);
+        
+    
+            var icon_24b7487a0b25a7ff73ff3240fa4a2c8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03849011dc4524ced68823840270d852 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1497436d6a6ef52eb3afe279aa438051 = $(`<div id="html_1497436d6a6ef52eb3afe279aa438051" style="width: 100.0%; height: 100.0%;">Shraddha Hospital</div>`)[0];
+                popup_03849011dc4524ced68823840270d852.setContent(html_1497436d6a6ef52eb3afe279aa438051);
+            
+        
+
+        marker_cfa41ffff8c812cbff52d3ef1bc9b70a.bindPopup(popup_03849011dc4524ced68823840270d852)
+        ;
+
+        
+    
+    
+                marker_cfa41ffff8c812cbff52d3ef1bc9b70a.setIcon(icon_24b7487a0b25a7ff73ff3240fa4a2c8d);
+            
+    
+            var marker_323560218fff359838f5ff5658c5f835 = L.marker(
+                [18.509568, 73.69005],
+                {
+}
+            ).addTo(map_00d7ca51e32ea673376196253be7fb50);
+        
+    
+            var icon_5c4dbbbd65aa9bd94db6782d9bc9e798 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a58788ab7ea2fb31c4220017767a888 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3b34143e317cb5032c293171182a101 = $(`<div id="html_d3b34143e317cb5032c293171182a101" style="width: 100.0%; height: 100.0%;">Shree Ganesh Hospital</div>`)[0];
+                popup_2a58788ab7ea2fb31c4220017767a888.setContent(html_d3b34143e317cb5032c293171182a101);
+            
+        
+
+        marker_323560218fff359838f5ff5658c5f835.bindPopup(popup_2a58788ab7ea2fb31c4220017767a888)
+        ;
+
+        
+    
+    
+                marker_323560218fff359838f5ff5658c5f835.setIcon(icon_5c4dbbbd65aa9bd94db6782d9bc9e798);
+            
+    
+            var marker_3cf2258cee707e497e08b3d3ee387dfb = L.marker(
+                [18.5102804, 73.689908],
+                {
+}
+            ).addTo(map_00d7ca51e32ea673376196253be7fb50);
+        
+    
+            var icon_080c688066a1d73f1f9082d1dec86cf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_370b0edbd87b724b0ee46193c12377ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e932846f0cda1c6658a098ddf7242db = $(`<div id="html_5e932846f0cda1c6658a098ddf7242db" style="width: 100.0%; height: 100.0%;">Shree Sai Hospital</div>`)[0];
+                popup_370b0edbd87b724b0ee46193c12377ce.setContent(html_5e932846f0cda1c6658a098ddf7242db);
+            
+        
+
+        marker_3cf2258cee707e497e08b3d3ee387dfb.bindPopup(popup_370b0edbd87b724b0ee46193c12377ce)
+        ;
+
+        
+    
+    
+                marker_3cf2258cee707e497e08b3d3ee387dfb.setIcon(icon_080c688066a1d73f1f9082d1dec86cf0);
+            
+</script>
+</html>
